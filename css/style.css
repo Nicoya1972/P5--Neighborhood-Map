@@ -1,7 +1,180 @@
-html, body {
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+html, body, #map-canvas {
+    height: 100%;
+    margin: 0px;
+    padding: 0px
 }
 
- #map-canvas { 
-    height: 100%; width: 100%; position: absolute;
+.search{
+    z-index: 100;
+    position: fixed;
+    left: 25px;
+    top: 25px;
+    height: 35px;
+    width: 35%;
+}
+
+.search-bar/*, .list-view-heading*/ {
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 80%;
+    font-size: 16px;
+    padding: 5px 5px 5px 10px;
+    outline: 0;
+    border: 1px solid ##B8B894;
+    font-weight: 200;
+}
+
+.search-bar[placeholder] {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.search-button {
+    background: #B8B894;
+    height: 100%;
+    position: absolute;
+    border: 0;
+    right: 0;
+    width: 20%;
+    outline: 0;
+    cursor: pointer;
+}
+
+.search-button:hover,
+.list-view button:hover {
+   background: ##B8B894;
+}
+
+.list-view {
+    z-index: 100;
+    position: fixed;
+    right: 25px;
+    top: 25px;
+    width: 30%;
+}
+.list-view a{
+    color: white;
+    text-decoration: none;
+}
+.list-view-heading {
+    background-color: #B8B894;
+    color: white;
+    text-align: center;
+    cursor:pointer;
+    line-height: 40px;
+}
+
+.list-view-heading a:hover{
+    color: #00FF00;
+}
+.list-view-heading .chevron {
+    line-height: 40px;
+    margin-right: 10%;
+}
+.list-view-content {
+    overflow: hidden;
+}
+.list-view button {
+    background: #B8B894;
+    height: 100%;
+    position: absolute;
+    border: 0;
+    right: 0;
+    width: 10%;
+    outline: 0;
+    color:white;
+    cursor: pointer;
+}
+.list {
+    background-color: #fff;
+}
+.list {
+    list-style-type: none;
+    text-align: center;
+    color: #333;
+}
+.list li {
+    font-size:12pt;
+    cursor: pointer;
+    padding: 5px 0 5px 0;
+}
+
+.list li:hover {
+    background: #00FF00;
+    color: #fff;
+}
+
+.content img{
+    max-width: 100%;
+}
+
+.msgbox{
+    display: none;
+    z-index: 400;
+    position: fixed;
+    bottom: 40px;
+    left: 5%;
+}
+
+@media(max-width:767px){
+    .search{
+        z-index: 100;
+        position: fixed;
+        top: 10px;
+        left: 5%;
+        height: 35px;
+        width: 75%;
+    }
+    .search-bar {
+        font-size: 14px;
+    }
+
+    .list-view-content{
+        z-index: 100;
+        position: fixed;
+        top: 50px;
+        left: 5%;
+        right: 5%   ;
+        width: 90%;
+    }
+    .list-view-heading{
+        position: fixed;
+        top: 10px;
+        right: 5%;
+        width: 10%;
+        height: 35px;
+    }
+    .list-view-heading-title{
+        display: none;
+    }
+    .list-view-heading .chevron {
+        margin: 0 auto;
+    }
+
+    .list li {
+        font-size: 9pt;
+        cursor: pointer;
+        padding: 3px 0 3px 0;
+    }
+
+    .content{
+        width: 200px;
+        font-size: 10px;
+    }
+
+    .content .row{
+        margin: 0;
+    }
+
+    .content h3{
+        font-size: 14px;
+    }
+
 }

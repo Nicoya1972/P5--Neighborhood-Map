@@ -9,6 +9,7 @@ var Locations = [
     latIngB: -121.934626,
     address:'6115 Main St, Clayton, CA 94517',
     description: 'Where is the Beef.'
+  },
   {
     id : '1',
     name: 'La Veranda Cafe',
@@ -313,4 +314,3 @@ var View = function(){
 var viewModel = new ViewModel();
 viewModel.initialize();
 ko.applyBindings(viewModel);
-

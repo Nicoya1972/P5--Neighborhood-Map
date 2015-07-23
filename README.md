@@ -13,9 +13,14 @@ https://developers.google.com/console/help/
 https://developers.google.com/maps/documentation/javascript/
 http://stackoverflow.com/search?q=google+mAP+API
 
-Websites Referenced for list:
+Websites Referenced for to create Menu and list:
+
 http://code.tutsplus.com/tutorials/how-to-create-a-drop-down-nav-menu-with-html5-css3-and-jquery--net-12176
 Udacity Intro to Ajax and Java Design Patterns.
+
+Foursquare API:
+
+https://developer.foursquare.com/
 
 You Tube:
 

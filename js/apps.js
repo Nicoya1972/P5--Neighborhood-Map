@@ -21,7 +21,7 @@ var locations = [{
     latIngA: 37.940305,
     latIngB: -121.933186,
     address: '6200 Center St, Clayton, CA 94517',
-    description: 'BBeer anyone'
+    description: 'Beer anyone'
 }, {
     id: '3',
     name: 'Skipolini\'s Pizza',
@@ -32,8 +32,8 @@ var locations = [{
 }, {
     id: '4',
     name: 'Clayton Club Saloon',
-    latIngA: 39.9411091,
-    latIngB: -121.9350516,
+    latIngA: 37.941134,
+    latIngB: -121.934996,
     address: '6096 Main St, Clayton, CA 94517',
     description: "Jack Daniel\'s lives here"
 }, {
@@ -42,7 +42,7 @@ var locations = [{
     latIngA: 37.940710,
     latIngB: -121.934705,
     address: '6101 Center St, Clayton, CA 94517',
-    description: 'Sanwiched Time.'
+    description: 'Sanwiched Time'
 }, {
     id: '6',
     name: 'Oakhust Country Club',
@@ -73,8 +73,9 @@ var locations = [{
     description: 'Where the Law lives'
 }];
 
-
+    
 var ViewModel = function() {
+    "use strict";
     var self = this;
 
     var view = new View();
@@ -93,8 +94,8 @@ var ViewModel = function() {
         self.locationList.removeAll();
         view.clearMarkers();
 
-        l = locations.length
-        for (i = 0; i < l; i++) {
+        var l = activeLocations.length;
+        for (var i = 0; i < l; i++) {
             view.renderLocation(activeLocations[i]);
 
             // Push the location into the list
@@ -192,24 +193,25 @@ var ViewModel = function() {
         var filteredLocations = [];
         // Split the keyword string by space
         var keywords = self.keywords().toLowerCase().split(' ');
-        for (var j = 0; j < Locations.length; j++) {
+        for (var j = 0; j < locations.length; j++) {
             for (var i = 0; i < keywords.length; i++) {
                 // If any one of the keywords match with any of one of the words in locations' names,
                 // save the matched location in the filteredLocations array.
-                if (Locations[j].name.toLowerCase().indexOf(keywords[i]) != -1) {
-                    filteredLocations.push(Locations[j]);
+                if (locations[j].name.toLowerCase().indexOf(keywords[i]) != -1) {
+                    filteredlocations.push(locations[j]);
                     break;
                 }
             }
         }
         // Render filtered locations
-        self.renderLocations(filteredLocations);
+        self.renderlocations(filteredlocations);
     };
 
 };
 
 
 var View = function() {
+      "use strict";
     var self = this;
     // Initialize Google Map
     var myLatlng = new google.maps.LatLng(37.940837, -121.934608);

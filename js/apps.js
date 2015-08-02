@@ -3,74 +3,74 @@
 // id, name, geo-location, address and description.
 var locations = [{
     id: '0',
-    name: 'Moresi\'s Chop House',
+    name: "Moresi\'s Chop House",
     latIngA: 37.941477,
     latIngB: -121.934626,
-    address: '6115 Main St, Clayton, CA 94517',
-    description: 'Where is the Beef'
+    address: "6115 Main St, Clayton, CA 94517",
+    description: "Where is the Beef"
 }, {
     id: '1',
-    name: 'La Veranda Cafe',
+    name: "La Veranda Cafe",
     latIngA: 37.940694,
     latIngB: -121.933255,
-    address: '6201 Center St, Clayton, CA 94517',
-    description: 'Italian Dining'
+    address: "6201 Center St, Clayton, CA 94517",
+    description: "Italian Dining"
 }, {
     id: '2',
-    name: 'Ed\'s Mudville Grill',
+    name: "Ed\'s Mudville Grill",
     latIngA: 37.940305,
     latIngB: -121.933186,
     address: '6200 Center St, Clayton, CA 94517',
     description: 'Beer anyone'
 }, {
     id: '3',
-    name: 'Skipolini\'s Pizza',
+    name: "Skipolini\'s Pizza",
     latIngA: 37.941048,
     latIngB: -121.936035,
-    address: '1035 Diablo St, Clayton, CA 94517',
+    address: "1035 Diablo St, Clayton, CA 94517",
     description: 'When the Moon hits you eye like a big pice of Pie...... '
 }, {
     id: '4',
-    name: 'Clayton Club Saloon',
+    name: "Clayton Club Saloon",
     latIngA: 37.941134,
     latIngB: -121.934996,
-    address: '6096 Main St, Clayton, CA 94517',
+    address: "6096 Main St, Clayton, CA 94517",
     description: "Jack Daniel\'s lives here"
 }, {
     id: '5',
-    name: 'Johnny\'s International Deli and Cafe',
+    name: "Johnny\'s International Deli and Cafe",
     latIngA: 37.940710,
     latIngB: -121.934705,
-    address: '6101 Center St, Clayton, CA 94517',
-    description: 'Sanwiched Time'
+    address: "6101 Center St, Clayton, CA 94517",
+    description: "Sanwiched Time"
 }, {
     id: '6',
-    name: 'Oakhust Country Club',
+    name: "Oakhust Country Club",
     latIngA: 37.943967,
     latIngB: -121.928021,
-    address: '1001 Peacock Creek Dr, Clayton, CA 94517',
+    address: "1001 Peacock Creek Dr, Clayton, CA 94517",
     description: 'Happy Gilmore'
 }, {
     id: '7',
-    name: 'Library',
+    name: "Library",
     latIngA: 37.942550,
     latIngB: -121.935326,
-    address: '6125 Clayton Rd, Clayton, CA 94517',
-    description: 'Shhhhh Learning taking Place'
+    address: "6125 Clayton Rd, Clayton, CA 94517",
+    description: "Shhhhh Learning taking Place"
 }, {
     id: '8',
-    name: 'The Grove',
+    name: "The Grove",
     latIngA: 37.940757,
     latIngB: -121.934017,
-    address: '6100 Main St, Clayton, CA 94517',
+    address: "6100 Main St, Clayton, CA 94517",
     description: "It\'s a Groove thing"
 }, {
     id: '9',
-    name: 'Clayton City Hall',
+    name: "Clayton City Hall",
     latIngA: 37.942415,
     latIngB: -121.937268,
-    address: '6000 Heritage Trail, Clayton, CA 94517',
-    description: 'Where the Law lives'
+    address: "6000 Heritage Trail, Clayton, CA 94517",
+    description: "Where the Law lives"
 }];
 
     

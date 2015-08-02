@@ -1,41 +1,41 @@
+<!DOCTYPE HTML5>
 <html>
-  <head>
-    <title>Clayton's Neighborhood Map</title>
-    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-    
-  </head>
-  <body>
-    <form class="search">
-        <input class="search-bar" data-bind="value: keywords" placeholder="find a place" autofocus></input>
-        <button class="search-button" type="submit" data-bind="click: search">
-          <i class="fa fa-search fa-2x fa-inverse"></i>
-        </button>
-    </form>
-    <div class="list-view">
-        <a data-toggle="collapse" href="#location-list" aria-expanded="false" aria-controls="location-list">
-          <div class="list-view-heading">
-            <span class="list-view-heading-title">Clayton's Places</span>
-            <span class="fa fa-chevron-down chevron"></span>
-          </div>
-        </a>
-        <div class="list-view-content collapse" id="location-list">
-          <ul data-bind="foreach: locationList" class="list">
-              <li data-bind="click: $parent.onLocationClick"><span data-bind="text:name"></span></li>
-          </ul>
-        </div>
-    </div>
-    <div id="alert-box" class="msgbox alert alert-warning">dds</div>
-    <div id="map-canvas" data-bind="map: myMap"></div>
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
-    <script type="text/javascript" src="js/knockout-3.3.0.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/apps.js"></script>
-  </body>
+   <head>
+      <title>Clayton's Neighborhood Map</title>
+      <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+      <meta charset="utf-8">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+      <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+   </head>
+   <body>
+      <form class="search">
+         <input class="search-bar" data-bind="value: keywords" placeholder="find a place" autofocus>
+         <button class="search-button" type="submit" data-bind="click: search">
+         <i class="fa fa-search fa-2x fa-inverse"></i>
+         </button>
+      </form>
+      <div class="list-view">
+         <a data-toggle="collapse" href="#location-list" aria-expanded="false" aria-controls="location-list">
+            <div class="list-view-heading">
+               <span class="list-view-heading-title">Clayton's Places</span>
+               <span class="fa fa-chevron-down chevron"></span>
+            </div>
+         </a>
+         <div class="list-view-content collapse" id="location-list">
+            <ul data-bind="foreach: locationList" class="list">
+               <li data-bind="click: $parent.onLocationClick"><span data-bind="text:name"></span></li>
+            </ul>
+         </div>
+      </div>
+      <div id="alert-box" class="msgbox alert alert-warning">Error</div>
+      <div id="map-canvas" data-bind="map: myMap"></div>
+      <!-- Latest compiled and minified JavaScript -->
+      <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+      <script type="text/javascript" src="js/knockout-3.3.0.js"></script>
+      <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+      <script type="text/javascript" src="js/apps.js"></script>
+   </body>
 </html>
